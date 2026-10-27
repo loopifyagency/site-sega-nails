@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T09:47:37Z",
+  "title": "Design System: SéGa Nails",
+  "extensions": {
+    "colorMeta": {
+      "cloth": {
+        "role": "primary",
+        "displayName": "Book-Cloth Graphite",
+        "canonical": "#464445",
+        "tonalRamp": [
+          "#121112",
+          "#2F2D2E",
+          "#4E4C4D",
+          "#706E6F",
+          "#939292",
+          "#B8B7B7",
+          "#D8D7D7",
+          "#F2F1F2"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Champagne Foil",
+        "canonical": "#DCCA9B",
+        "tonalRamp": [
+          "#13110D",
+          "#322D23",
+          "#534D3B",
+          "#786E55",
+          "#9E9170",
+          "#C6B68C",
+          "#E8D6A9",
+          "#FFF1CD"
+        ]
+      },
+      "gold-ink": {
+        "role": "secondary",
+        "displayName": "Gold Ink",
+        "canonical": "#7A6633",
+        "tonalRamp": [
+          "#191000",
+          "#392C09",
+          "#5C4B20",
+          "#806C3B",
+          "#A19167",
+          "#C4B694",
+          "#E2D7BB",
+          "#FBF1DA"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Agenda Paper",
+        "canonical": "#F5F5F4",
+        "tonalRamp": [
+          "#121211",
+          "#2E2E2E",
+          "#4D4D4D",
+          "#6F6F6E",
+          "#929292",
+          "#B7B7B7",
+          "#D7D7D6",
+          "#F2F2F1"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Recessed Paper",
+        "canonical": "#ECEBE8",
+        "tonalRamp": [
+          "#121211",
+          "#2E2E2D",
+          "#4D4D4C",
+          "#6F6F6D",
+          "#939290",
+          "#B8B7B5",
+          "#D8D7D5",
+          "#F3F2EF"
+        ]
+      },
+      "cloth-deep": {
+        "role": "neutral",
+        "displayName": "Deep Cloth",
+        "canonical": "#383637",
+        "tonalRamp": [
+          "#121112",
+          "#2F2D2E",
+          "#4E4C4D",
+          "#706E6F",
+          "#939292",
+          "#B8B7B7",
+          "#D8D7D7",
+          "#F2F1F2"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Page Ink",
+        "canonical": "#464445",
+        "tonalRamp": [
+          "#121112",
+          "#2F2D2E",
+          "#4E4C4D",
+          "#706E6F",
+          "#939292",
+          "#B8B7B7",
+          "#D8D7D7",
+          "#F2F1F2"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#656364",
+        "tonalRamp": [
+          "#121112",
+          "#2F2D2E",
+          "#4E4C4D",
+          "#706E6F",
+          "#939192",
+          "#B8B7B7",
+          "#D8D7D8",
+          "#F2F1F2"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Margin Rule",
+        "canonical": "rgba(70, 68, 69, 0.10)",
+        "tonalRamp": [
+          "rgba(70,68,69,.04)",
+          "rgba(70,68,69,.07)",
+          "rgba(70,68,69,.10)",
+          "rgba(70,68,69,.16)",
+          "rgba(70,68,69,.24)",
+          "rgba(70,68,69,.36)",
+          "rgba(70,68,69,.52)",
+          "rgba(70,68,69,.72)"
+        ]
+      },
+      "gold-line": {
+        "role": "neutral",
+        "displayName": "Gold Fillet Line",
+        "canonical": "rgba(220, 202, 155, 0.55)",
+        "tonalRamp": [
+          "rgba(220,202,155,.12)",
+          "rgba(220,202,155,.22)",
+          "rgba(220,202,155,.34)",
+          "rgba(220,202,155,.55)",
+          "rgba(220,202,155,.70)",
+          "rgba(220,202,155,.82)",
+          "rgba(220,202,155,.92)",
+          "rgba(220,202,155,1)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display-hero": {
+        "displayName": "Display, hero",
+        "purpose": "The H1 only; Bodoni Moda at giant scale, tight and tracked in."
+      },
+      "display-wall": {
+        "displayName": "Display, wall",
+        "purpose": "The gallery heading, the largest h2."
+      },
+      "display-phone": {
+        "displayName": "Display, phone",
+        "purpose": "The booking number on the gold page; one line, lining tabular figures."
+      },
+      "display-wordmark": {
+        "displayName": "Display, wordmark",
+        "purpose": "The footer name in gold on cloth, beside the hibiscus mark."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Every section h2; one phrase in the accent colour."
+      },
+      "title-lg": {
+        "displayName": "Title, large",
+        "purpose": "The four steps of the story and the closing-card titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card and generic h3."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Counted facts in gold on cloth."
+      },
+      "question": {
+        "displayName": "Question",
+        "purpose": "Accordion summaries and hours-table day names."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Verbatim client reviews in Bodoni italic with explicit optical size 9 (7 for long quotes)."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The hero sentence in Jost, soft ink."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Everything that is read; Jost 400."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button labels; Jost 500."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Functional micro-labels only: scroll hint, card price note, review attribution, loader subtitle."
+      },
+      "hand": {
+        "displayName": "Hand",
+        "purpose": "La Belle Aurore margin notes rotated -3 degrees; never headings or paragraphs."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-lift",
+        "value": "0 30px 50px -34px rgba(40,38,39,.65), 0 2px 6px rgba(40,38,39,.12)",
+        "purpose": "Cloth service cards resting on paper."
+      },
+      {
+        "name": "note-lift",
+        "value": "0 36px 60px -34px rgba(0,0,0,.6), 0 2px 8px rgba(0,0,0,.16)",
+        "purpose": "Review sheets stacked on cloth."
+      },
+      {
+        "name": "float",
+        "value": "0 14px 30px -10px rgba(0,0,0,.45), 0 3px 8px rgba(0,0,0,.18)",
+        "purpose": "The floating Appeler button (the map pill uses 0 14px 30px -12px rgba(0,0,0,.5))."
+      },
+      {
+        "name": "band",
+        "value": "0 22px 40px -26px rgba(0,0,0,.45), 0 -10px 30px -24px rgba(0,0,0,.25)",
+        "purpose": "The tilted gold marquee band."
+      },
+      {
+        "name": "plate",
+        "value": "0 40px 80px -30px rgba(0,0,0,.7)",
+        "purpose": "The enlarged photograph in the lightbox."
+      },
+      {
+        "name": "ribbon",
+        "value": "drop-shadow(0 2px 3px rgba(0,0,0,.28))",
+        "purpose": "Filter shadow that follows the notched ribbon marker."
+      },
+      {
+        "name": "cover-edge",
+        "value": "12px 0 50px rgba(0,0,0,.35)",
+        "purpose": "The page edge of the loader cover while it swings open."
+      },
+      {
+        "name": "today-halo",
+        "value": "0 0 0 5px rgba(220,202,155,.2)",
+        "purpose": "Spread ring around today’s bar in the week chart; no blur."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "Expo out: default for CSS transitions (liquid fill .65s, link underline .6s, nav hide .7s)."
+      },
+      {
+        "name": "ease-io",
+        "value": "cubic-bezier(.76, 0, .24, 1)",
+        "purpose": "Expo in-out: the full-screen menu curtain (.9s)."
+      },
+      {
+        "name": "expo.out",
+        "value": "gsap expo.out, 1.2s to 1.9s",
+        "purpose": "Reveals: headings, supporting copy (y 34px, 1.3s), cards, map, hero entrance."
+      },
+      {
+        "name": "expo.inOut",
+        "value": "gsap expo.inOut, 1.6s to 1.8s",
+        "purpose": "Cover opening (rotationY -106deg, 1.7s), wipes and curtains, accordion close."
+      },
+      {
+        "name": "power3",
+        "value": "gsap power3.out .7s to .9s; power3.in .55s",
+        "purpose": "Pointer follow (tilt, magnetic, mouse parallax) and the exit of a review sheet."
+      },
+      {
+        "name": "power2.inOut",
+        "value": "gsap power2.inOut 1.4s to 3.2s",
+        "purpose": "Line drawing: hibiscus outline, progress hairline, hand-drawn ellipse."
+      },
+      {
+        "name": "back.out",
+        "value": "gsap back.out(1.5), 1.3s",
+        "purpose": "The one overshoot: the booking heading pop."
+      },
+      {
+        "name": "sine.inOut",
+        "value": "gsap sine.inOut yoyo, 14s to 18s",
+        "purpose": "Idle breathing of lead photographs and drifting petals."
+      },
+      {
+        "name": "heading-reveals",
+        "value": "words-up, chars-up, side, wipe, flip, blur, type, pop, drop",
+        "purpose": "One distinct reveal per section heading, triggered once at 88% of the viewport."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Script skips the motion layer, removes the cover, stacks the story, starts reviews paused; CSS reduces durations to .01ms."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-burger",
+        "value": "1100px"
+      },
+      {
+        "name": "mobile",
+        "value": "899px"
+      },
+      {
+        "name": "small-hero",
+        "value": "420px"
+      },
+      {
+        "name": "pinned-desktop",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Gold Button",
+      "kind": "button",
+      "refersTo": "button-gold",
+      "description": "Primary action on cloth: gold foil pill that fills with paper from below on hover and focus.",
+      "html": "<a class=\"ds-btn-gold\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg><span>Appeler</span></a>",
+      "css": ".ds-btn-gold{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:.7em;min-height:52px;padding:.95rem 1.7rem;border-radius:999px;border:1px solid transparent;background:var(--gold,#DCCA9B);color:var(--cloth,#464445);font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-weight:500;font-size:1rem;line-height:1;letter-spacing:.02em;text-decoration:none;white-space:nowrap;cursor:pointer;transition:color .55s cubic-bezier(.16,1,.3,1),border-color .55s cubic-bezier(.16,1,.3,1)}.ds-btn-gold::before{content:\"\";position:absolute;left:-10%;right:-10%;top:-1px;bottom:-1px;z-index:-1;background:var(--paper,#F5F5F4);border-radius:50% 50% 0 0/80% 80% 0 0;transform:translateY(105%);transition:transform .65s cubic-bezier(.16,1,.3,1),border-radius .65s cubic-bezier(.16,1,.3,1)}.ds-btn-gold svg{width:1.2em;height:1.2em;flex:none}.ds-btn-gold:hover,.ds-btn-gold:focus-visible{color:var(--cloth,#464445)}.ds-btn-gold:hover::before,.ds-btn-gold:focus-visible::before{transform:none;border-radius:0}.ds-btn-gold:focus-visible{outline:2px solid var(--gold-ink,#7A6633);outline-offset:4px}"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Primary action on paper and on the gold booking page: graphite pill that fills with gold on hover and focus.",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg><span>Appeler le 06 98 15 30 05</span></a>",
+      "css": ".ds-btn-ink{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:.7em;min-height:52px;padding:.95rem 1.7rem;border-radius:999px;border:1px solid transparent;background:var(--cloth,#464445);color:var(--paper,#F5F5F4);font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-weight:500;font-size:1rem;line-height:1;letter-spacing:.02em;text-decoration:none;white-space:nowrap;cursor:pointer;transition:color .55s cubic-bezier(.16,1,.3,1),border-color .55s cubic-bezier(.16,1,.3,1)}.ds-btn-ink::before{content:\"\";position:absolute;left:-10%;right:-10%;top:-1px;bottom:-1px;z-index:-1;background:var(--gold,#DCCA9B);border-radius:50% 50% 0 0/80% 80% 0 0;transform:translateY(105%);transition:transform .65s cubic-bezier(.16,1,.3,1),border-radius .65s cubic-bezier(.16,1,.3,1)}.ds-btn-ink svg{width:1.2em;height:1.2em;flex:none}.ds-btn-ink:hover,.ds-btn-ink:focus-visible{color:var(--cloth,#464445)}.ds-btn-ink:hover::before,.ds-btn-ink:focus-visible::before{transform:none;border-radius:0}.ds-btn-ink:focus-visible{outline:2px solid var(--gold-ink,#7A6633);outline-offset:4px}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on paper: graphite outline pill that fills graphite on hover and focus.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\"><span>Écrire sur Instagram</span></a>",
+      "css": ".ds-btn-line{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:.7em;min-height:52px;padding:.95rem 1.7rem;border-radius:999px;border:1px solid var(--cloth,#464445);background:transparent;color:var(--cloth,#464445);font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-weight:500;font-size:1rem;line-height:1;letter-spacing:.02em;text-decoration:none;white-space:nowrap;cursor:pointer;transition:color .55s cubic-bezier(.16,1,.3,1),border-color .55s cubic-bezier(.16,1,.3,1)}.ds-btn-line::before{content:\"\";position:absolute;left:-10%;right:-10%;top:-1px;bottom:-1px;z-index:-1;background:var(--cloth,#464445);border-radius:50% 50% 0 0/80% 80% 0 0;transform:translateY(105%);transition:transform .65s cubic-bezier(.16,1,.3,1),border-radius .65s cubic-bezier(.16,1,.3,1)}.ds-btn-line svg{width:1.2em;height:1.2em;flex:none}.ds-btn-line:hover,.ds-btn-line:focus-visible{color:var(--paper,#F5F5F4)}.ds-btn-line:hover::before,.ds-btn-line:focus-visible::before{transform:none;border-radius:0}.ds-btn-line:focus-visible{outline:2px solid var(--gold-ink,#7A6633);outline-offset:4px}"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Inline link with a 1px underline that draws in from the left and an arrow that slides 6px.",
+      "html": "<a class=\"ds-link\" href=\"#\"><span>Toutes les réalisations sur @sega.nails</span><svg class=\"ds-arr\" viewBox=\"0 0 40 12\" aria-hidden=\"true\"><path d=\"M0 6h37M32 1l5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-link{display:inline-flex;align-items:center;gap:.7em;min-height:44px;padding:.55rem 0;text-decoration:none;color:var(--cloth,#464445);font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-size:1.05rem}.ds-link>span{padding-bottom:3px;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .6s cubic-bezier(.16,1,.3,1)}.ds-arr{width:2.4em;height:.7em;flex:none;transition:transform .6s cubic-bezier(.16,1,.3,1)}.ds-link:hover>span,.ds-link:focus-visible>span{background-size:100% 1px}.ds-link:hover .ds-arr{transform:translateX(6px)}.ds-link:focus-visible{outline:2px solid var(--gold-ink,#7A6633);outline-offset:4px;border-radius:3px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Solid paper top bar: hibiscus mark and Bodoni name, underline-drawing links, small gold call button. Becomes a burger and full-screen cloth menu at 1100px and below.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-nav-brand\" href=\"#\"><svg class=\"ds-nav-mark\" viewBox=\"0 0 200 200\" aria-hidden=\"true\"><g fill=\"#464445\" stroke=\"#DCCA9B\" stroke-width=\"2.2\" stroke-linejoin=\"round\"><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\"/><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\" transform=\"rotate(72 100 100)\"/><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\" transform=\"rotate(144 100 100)\"/><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\" transform=\"rotate(216 100 100)\"/><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\" transform=\"rotate(288 100 100)\"/></g><circle cx=\"100\" cy=\"100\" r=\"9\" fill=\"#DCCA9B\"/></svg><span>SéGa&nbsp;Nails</span></a><nav class=\"ds-nav-links\"><a href=\"#\">Savoir-faire</a><a href=\"#\">Prestations</a><a href=\"#\">Galerie</a><a href=\"#\">Avis</a><a href=\"#\">Venir</a></nav><a class=\"ds-nav-call\" href=\"#\"><svg class=\"ds-ico\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg><span>Appeler</span></a></header>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:clamp(1rem,3vw,2.6rem);height:76px;padding:0 clamp(20px,5.5vw,88px);background:var(--paper,#F5F5F4);color:var(--cloth,#464445);border-bottom:1px solid var(--rule,rgba(70,68,69,.10))}.ds-nav-brand{display:inline-flex;align-items:center;gap:.7rem;margin-right:auto;text-decoration:none;color:inherit;font-family:var(--f-display,\"Bodoni Moda\",\"Bodoni 72\",Didot,Georgia,serif);font-size:1.45rem;letter-spacing:-.01em}.ds-nav-mark{width:36px;height:36px}.ds-nav-links{display:flex;gap:clamp(1rem,2.2vw,2.2rem);margin-right:clamp(.5rem,2vw,2rem)}.ds-nav-links a{position:relative;padding:.5rem 0;text-decoration:none;color:inherit;font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-size:.98rem}.ds-nav-links a::after{content:\"\";position:absolute;left:0;right:0;bottom:.2rem;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .6s cubic-bezier(.16,1,.3,1)}.ds-nav-links a:hover::after,.ds-nav-links a:focus-visible::after{transform:scaleX(1);transform-origin:left}.ds-nav-links a:focus-visible{outline:2px solid var(--gold-ink,#7A6633);outline-offset:4px;border-radius:3px}.ds-nav-call{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;gap:.7em;min-height:44px;padding:.65rem 1.15rem;border-radius:999px;background:var(--gold,#DCCA9B);color:var(--cloth,#464445);text-decoration:none;font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-weight:500;font-size:.93rem;line-height:1;letter-spacing:.02em;transition:color .55s cubic-bezier(.16,1,.3,1)}.ds-nav-call::before{content:\"\";position:absolute;left:-10%;right:-10%;top:-1px;bottom:-1px;z-index:-1;background:var(--paper,#F5F5F4);border-radius:50% 50% 0 0/80% 80% 0 0;transform:translateY(105%);transition:transform .65s cubic-bezier(.16,1,.3,1),border-radius .65s cubic-bezier(.16,1,.3,1)}.ds-nav-call:hover::before,.ds-nav-call:focus-visible::before{transform:none;border-radius:0}.ds-nav-call svg{width:1.2em;height:1.2em;flex:none}.ds-nav-call:focus-visible{outline:2px solid var(--gold-ink,#7A6633);outline-offset:4px}"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Cloth card on paper: almond photo frame with gold hairline, Bodoni title, soft paper text, gold label. Tilts toward the pointer with a glare on fine hover pointers.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-media\"><svg viewBox=\"0 0 1 1\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path d=\"M0.5 0C0.68 0 0.82 0.18 0.92 0.4C0.98 0.54 1 0.64 1 0.76C1 0.92 0.84 1 0.5 1C0.16 1 0 0.92 0 0.76C0 0.64 0.02 0.54 0.08 0.4C0.18 0.18 0.32 0 0.5 0Z\" fill=\"#383637\"/><path d=\"M0.5 0C0.68 0 0.82 0.18 0.92 0.4C0.98 0.54 1 0.64 1 0.76C1 0.92 0.84 1 0.5 1C0.16 1 0 0.92 0 0.76C0 0.64 0.02 0.54 0.08 0.4C0.18 0.18 0.32 0 0.5 0Z\" fill=\"none\" stroke=\"#DCCA9B\" stroke-width=\"2.4\" vector-effect=\"non-scaling-stroke\"/></svg></div><h3>La French</h3><p>Le blanc net en bord libre sur fond rosé&nbsp;: le grand classique, toujours juste.</p><span class=\"ds-card-tag\">Tarif sur demande</span><i class=\"ds-card-glare\" aria-hidden=\"true\"></i></article>",
+      "css": ".ds-card{position:relative;display:flex;flex-direction:column;gap:.9rem;width:min(100%,340px);padding:1.1rem 1.1rem 1.4rem;border-radius:14px;overflow:hidden;background-color:var(--cloth,#464445);background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.022) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(0,0,0,.055) 0 1px,transparent 1px 3px);color:var(--paper,#F5F5F4);box-shadow:0 30px 50px -34px rgba(40,38,39,.65),0 2px 6px rgba(40,38,39,.12);transition:transform .7s cubic-bezier(.16,1,.3,1)}.ds-card:hover{transform:perspective(1000px) rotateY(5deg) rotateX(-4deg)}.ds-card-media{position:relative;width:100%;aspect-ratio:5/6.4}.ds-card-media svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.ds-card h3{margin:.2rem 0 0;padding:0 .3rem;font-family:var(--f-display,\"Bodoni Moda\",\"Bodoni 72\",Didot,Georgia,serif);font-weight:400;font-size:clamp(1.5rem,2.2vw,2.1rem);line-height:1.08;letter-spacing:-.022em}.ds-card p{margin:0;padding:0 .3rem;font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-size:1rem;line-height:1.5;color:rgba(245,245,244,.8)}.ds-card-tag{margin-top:auto;padding:.2rem .3rem 0;font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold,#DCCA9B)}.ds-card-glare{position:absolute;inset:0;pointer-events:none;border-radius:inherit;opacity:0;transition:opacity .5s cubic-bezier(.16,1,.3,1);background:radial-gradient(circle at 35% 25%,rgba(255,255,255,.32),transparent 55%)}.ds-card:hover .ds-card-glare{opacity:1}@media (prefers-reduced-motion:reduce){.ds-card,.ds-card-glare{transition:none}.ds-card:hover{transform:none}}"
+    },
+    {
+      "name": "Fillet Frame",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The cover: woven book-cloth with a double gold fillet inset like a blind-stamped cover, hibiscus mark and Bodoni name in foil gold.",
+      "html": "<div class=\"ds-cover\"><span class=\"ds-fillet\" aria-hidden=\"true\"></span><div class=\"ds-cover-center\"><svg class=\"ds-cover-mark\" viewBox=\"0 0 200 200\" aria-hidden=\"true\"><g fill=\"#DCCA9B\" stroke=\"#464445\" stroke-width=\"2.2\" stroke-linejoin=\"round\"><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\"/><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\" transform=\"rotate(72 100 100)\"/><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\" transform=\"rotate(144 100 100)\"/><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\" transform=\"rotate(216 100 100)\"/><path d=\"M100 100C72 88 50 60 58 36C63 21 80 15 90 24C95 16 105 16 110 24C120 15 137 21 142 36C150 60 128 88 100 100Z\" transform=\"rotate(288 100 100)\"/></g><circle cx=\"100\" cy=\"100\" r=\"9\" fill=\"#464445\"/></svg><p class=\"ds-cover-name\">SéGa Nails</p></div></div>",
+      "css": ".ds-cover{position:relative;display:grid;place-items:center;width:min(100%,420px);aspect-ratio:5/6.4;overflow:hidden;background-color:var(--cloth,#464445);background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.022) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(0,0,0,.055) 0 1px,transparent 1px 3px);color:var(--paper,#F5F5F4)}.ds-fillet{position:absolute;inset:clamp(12px,1.8vw,24px);border:1px solid var(--gold-line,rgba(220,202,155,.55));border-radius:3px;pointer-events:none}.ds-fillet::after{content:\"\";position:absolute;inset:6px;border:1px solid rgba(220,202,155,.22);border-radius:2px}.ds-cover-center{position:relative;display:grid;justify-items:center;gap:1.1rem;text-align:center;padding:0 1.5rem}.ds-cover-mark{width:clamp(96px,15vw,150px);height:auto;aspect-ratio:1}.ds-cover-name{margin:0;font-family:var(--f-display,\"Bodoni Moda\",\"Bodoni 72\",Didot,Georgia,serif);font-weight:400;font-size:clamp(2.7rem,7.5vw,4.2rem);line-height:1;letter-spacing:-.02em;color:var(--gold,#DCCA9B)}"
+    },
+    {
+      "name": "Review Note",
+      "kind": "card",
+      "refersTo": "note",
+      "description": "Paper sheet on cloth with a large gold-ink quotation mark, an italic Bodoni quote and a tracked attribution; the next sheets fan out behind it.",
+      "html": "<div class=\"ds-note-stage\"><div class=\"ds-note-ghost\" aria-hidden=\"true\"></div><article class=\"ds-note\"><blockquote><p>Très sympathique et très professionnelle</p></blockquote><footer><b>Bruno Galant</b></footer></article></div>",
+      "css": ".ds-note-stage{position:relative;padding:2rem 3.4rem 3.4rem 2rem;background-color:var(--cloth,#464445);background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.022) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(0,0,0,.055) 0 1px,transparent 1px 3px);width:min(100%,520px)}.ds-note-ghost{position:absolute;left:2rem;right:3.4rem;top:2rem;bottom:3.4rem;border-radius:4px;background:var(--paper,#F5F5F4);transform:translate(28px,20px) rotate(2.2deg) scale(.965);box-shadow:0 36px 60px -34px rgba(0,0,0,.6),0 2px 8px rgba(0,0,0,.16)}.ds-note{position:relative;padding:clamp(1.6rem,3vw,2.6rem) clamp(1.5rem,3vw,2.8rem) clamp(1.4rem,2.4vw,2rem);border-radius:4px;background:var(--paper,#F5F5F4);color:var(--cloth,#464445);box-shadow:0 36px 60px -34px rgba(0,0,0,.6),0 2px 8px rgba(0,0,0,.16)}.ds-note::before{content:\"\\201C\";position:absolute;left:clamp(1rem,2vw,1.6rem);top:-.1em;font-family:var(--f-display,\"Bodoni Moda\",\"Bodoni 72\",Didot,Georgia,serif);font-size:clamp(5rem,9vw,8rem);line-height:1;color:var(--gold-ink,#7A6633);opacity:.9;pointer-events:none}.ds-note blockquote{margin:0;padding-top:clamp(1.8rem,3vw,2.6rem)}.ds-note blockquote p{margin:0;font-family:var(--f-display,\"Bodoni Moda\",\"Bodoni 72\",Didot,Georgia,serif);font-style:italic;font-weight:400;font-size:clamp(1.3rem,2.1vw,1.8rem);line-height:1.38;letter-spacing:0;font-variation-settings:\"opsz\" 9}.ds-note footer{margin-top:1.4rem;font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-size:.86rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink,#7A6633)}.ds-note footer b{font-weight:500}"
+    },
+    {
+      "name": "Question Row",
+      "kind": "custom",
+      "refersTo": "question-plus",
+      "description": "Native details accordion on ruled paper: Bodoni question, plus ring that turns and fills graphite when open, gold on hover.",
+      "html": "<div class=\"ds-faq\"><details class=\"ds-qa\"><summary><span>Comment prendre rendez-vous&nbsp;?</span><i class=\"ds-plus\" aria-hidden=\"true\"></i></summary><div class=\"ds-qa-body\"><p>Par téléphone ou par message sur Instagram. Un appel ou un message suffit.</p></div></details><details class=\"ds-qa\" open><summary><span>Et si un ongle se défait&nbsp;?</span><i class=\"ds-plus\" aria-hidden=\"true\"></i></summary><div class=\"ds-qa-body\"><p>Appelez le salon. D’après une cliente, Séverine est disponible de suite pour le réparer.</p></div></details></div>",
+      "css": ".ds-faq{width:min(100%,560px);border-top:1px solid var(--cloth,#464445);background:var(--paper,#F5F5F4)}.ds-qa{border-bottom:1px solid var(--rule,rgba(70,68,69,.10));background:var(--paper,#F5F5F4)}.ds-qa summary{display:flex;align-items:center;justify-content:space-between;gap:1.4rem;min-height:72px;padding:1.2rem 0;cursor:pointer;list-style:none;font-family:var(--f-display,\"Bodoni Moda\",\"Bodoni 72\",Didot,Georgia,serif);font-size:clamp(1.3rem,2.1vw,1.8rem);line-height:1.15;color:var(--cloth,#464445)}.ds-qa summary::-webkit-details-marker{display:none}.ds-qa summary:focus-visible{outline:2px solid var(--gold-ink,#7A6633);outline-offset:4px;border-radius:3px}.ds-plus{position:relative;flex:none;width:34px;height:34px;border:1px solid var(--cloth,#464445);border-radius:50%;transition:background-color .5s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}.ds-plus::before,.ds-plus::after{content:\"\";position:absolute;left:50%;top:50%;width:12px;height:1.5px;margin:-.75px 0 0 -6px;background:var(--cloth,#464445);transition:transform .6s cubic-bezier(.16,1,.3,1),background-color .5s}.ds-plus::after{transform:rotate(90deg)}.ds-qa[open] .ds-plus{transform:rotate(180deg);background:var(--cloth,#464445)}.ds-qa[open] .ds-plus::before,.ds-qa[open] .ds-plus::after{background:var(--paper,#F5F5F4)}.ds-qa[open] .ds-plus::after{transform:rotate(0)}.ds-qa summary:hover .ds-plus{background:var(--gold,#DCCA9B)}.ds-qa[open] summary:hover .ds-plus{background:var(--cloth,#464445)}.ds-qa-body p{margin:0;max-width:40rem;padding:0 3.5rem 1.6rem 0;font-family:var(--f-body,Jost,\"Avenir Next\",\"Segoe UI\",system-ui,sans-serif);font-size:1rem;line-height:1.62;color:var(--ink-soft,#656364)}"
+    },
+    {
+      "name": "Marquee Band",
+      "kind": "custom",
+      "refersTo": "marquee",
+      "description": "Gold foil band tilted -1.6 degrees across a section seam: Bodoni italic service words separated by almond glyphs, scrolling slowly.",
+      "html": "<div class=\"ds-marquee-wrap\"><div class=\"ds-marquee\" aria-hidden=\"true\"><div class=\"ds-marquee-track\"><div class=\"ds-marquee-group\"><span>Pose d’ongles</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>Nail art</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>French</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>Dentelle</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>Fleurs 3D</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>Ombré</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg></div><div class=\"ds-marquee-group\"><span>Pose d’ongles</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>Nail art</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>French</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>Dentelle</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>Fleurs 3D</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg><span>Ombré</span><svg class=\"ds-alm\" viewBox=\"0 0 20 28\" aria-hidden=\"true\"><path d=\"M10 1C15 6 19 13 19 19c0 4.500-4 8-9 8s-9-3.500-9-8C1 13 5 6 10 1Z\" fill=\"currentColor\"/></svg></div></div></div></div>",
+      "css": ".ds-marquee-wrap{overflow:hidden;padding:1.6rem 0}.ds-marquee{margin:0 -4vw;padding:clamp(.9rem,1.4vw,1.3rem) 0;background:var(--gold,#DCCA9B);color:var(--cloth,#464445);transform:rotate(-1.6deg);overflow:hidden;box-shadow:0 22px 40px -26px rgba(0,0,0,.45),0 -10px 30px -24px rgba(0,0,0,.25)}.ds-marquee-track{display:flex;width:max-content;animation:ds-marq 28s linear infinite}.ds-marquee-group{display:flex;align-items:center;gap:clamp(1.4rem,2.6vw,2.6rem);padding-right:clamp(1.4rem,2.6vw,2.6rem)}.ds-marquee-group span{font-family:var(--f-display,\"Bodoni Moda\",\"Bodoni 72\",Didot,Georgia,serif);font-style:italic;font-size:clamp(1.9rem,4.4vw,3.8rem);line-height:1.1;white-space:nowrap;letter-spacing:-.015em}.ds-alm{width:clamp(10px,1.3vw,18px);height:clamp(15px,1.9vw,26px);flex:none;opacity:.85}@keyframes ds-marq{to{transform:translateX(-50%)}}@media (prefers-reduced-motion:reduce){.ds-marquee-track{animation:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Opened Appointment Book",
+    "overview": "The site is Séverine's agenda, opened for the visitor. A graphite book-cloth cover swings open on load; behind it are off-white ruled pages with a gold margin rule, gold-foil edges, and a gold ribbon marker hanging from the right edge that tracks how far you have read. Every section is a different page of the same book: cloth pages (savoir-faire, la semaine, avis, footer) alternate with paper pages (accueil, prestations, galerie, questions, nous trouver), with one gold leaf (the booking call) and one gold band (the marquee) as punctuation.\n\nPersonality is done by type and shape, not by decoration. Bodoni Moda at giant scale gives the editorial, jeweller's-box voice; Jost does all the reading; La Belle Aurore appears only as a handwritten agenda annotation. The almond silhouette of a nail frames the photographs, and the French-tip \"smile\" curve is the seam between pages. The palette is the three imposed brand colours and their derivatives; the client photographs are the only other chroma on the page. Density is low and unhurried: huge headlines, wide margins, long slow expo-eased motion.\n\nThe system is recognizable with all copy removed: gold fillet, almond frames, ribbon, ruled paper. It refuses the beauty-salon template (pastel hero, three icon cards, stock photo grid).",
+    "keyCharacteristics": [
+      "Two surface themes, `.paper` (ruled agenda page) and `.cloth` (woven book-cloth), swapped section by section and joined by curved seams.",
+      "Champagne gold is flat foil: fills, hairlines, rings, bars, and large type on cloth. On paper, gold text is always gold-ink.",
+      "Almond-clipped photographs with a drawn gold hairline; a double gold fillet inset like a blind-stamped cover.",
+      "Bodoni Moda (optical sizing) for everything large; Jost for everything read; one handwritten voice for annotations.",
+      "Soft, long, negatively spread shadows only; depth otherwise comes from surface change and gold lines.",
+      "Pill buttons with a liquid fill; 14px cards; 4px paper notes.",
+      "Slow expo-eased motion, transform and opacity first, one distinct heading reveal per section, content readable without it."
+    ],
+    "rules": [
+      {
+        "name": "The Surface Flip Rule",
+        "body": "`.paper` and `.cloth` each define the same five semantic variables (`--fg`, `--fg-soft`, `--accent`, `--line`, `--focus`); components read those and never hardcode a theme colour. Paper: graphite / soft ink / gold-ink / rule / gold-ink. Cloth: paper / paper 76% / gold / gold at 28% / gold. On the gold booking page, text and focus are graphite and the emphasised phrase is graphite.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Golds Rule",
+        "body": "Gold #DCCA9B is for surfaces and for type on graphite. Gold text on paper is always #7A6633. There is no third gold.",
+        "section": "colors"
+      },
+      {
+        "name": "The Primary Inverts Rule",
+        "body": "The primary action is graphite on paper and on gold, and gold on cloth. Gold-on-paper would give a 1.5:1 button edge.",
+        "section": "colors"
+      },
+      {
+        "name": "The Photographs Are The Colour Rule",
+        "body": "The interface adds no hue beyond the three brand colours; the only chroma on a page comes from the client's nail photographs.",
+        "section": "colors"
+      },
+      {
+        "name": "The Optical Size Rule",
+        "body": "Bodoni Moda runs with `font-optical-sizing: auto` so display sizes get hairline contrast; small italic (quotes) sets `opsz` explicitly to 9 (7 for long quotes) so the hairlines stay readable. Weight stays 400 everywhere Bodoni appears.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Phrase Rule",
+        "body": "In a section heading, one phrase sits in `<em>` at weight 400 in the accent colour (gold-ink on paper, gold on cloth, graphite on gold). The emphasis is a colour change, never a size or weight change. (Two headings also set the phrase in italic; see Not canonized.)",
+        "section": "typography"
+      },
+      {
+        "name": "The Hand Is A Margin Note Rule",
+        "body": "La Belle Aurore is only ever a short annotation rotated -3°, plus the hand-drawn ellipse around today's row. It is never a heading and never a paragraph.",
+        "section": "typography"
+      },
+      {
+        "name": "The Italic Is Voice Rule",
+        "body": "Bodoni italic carries quoted or annotated material: review quotes, photo captions, the marquee, numeral units, the \"today\" marker in the chart and hours table, the pressed mobile-menu link.",
+        "section": "typography"
+      },
+      {
+        "name": "The Page Edge Rule",
+        "body": "Content starts right of the gold margin rule and inside `--pad`; wide display type (the phone number, the footer wordmark) may bleed only through negative margins on its own line.",
+        "section": "layout"
+      },
+      {
+        "name": "The Curved Seam Rule",
+        "body": "Paper and cloth never meet along a straight horizontal line; every seam is a `--edge`-high ellipse (see Shapes).",
+        "section": "layout"
+      },
+      {
+        "name": "The Resting Sheet Rule",
+        "body": "Shadows are tall (14 to 40px offset), wide (30 to 80px blur), negatively spread (-10 to -34px), and graphite or black at .45 to .7 alpha; a short contact shadow (2 to 3px offset, .12 to .18 alpha) may sit under them. They describe a sheet resting above the page. Photographs, buttons and plain text blocks carry none.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do alternate cloth and paper sections and join every seam with the smile and arch ellipse (`--edge` high, 120% wide); punctuate with the gold band and the gold booking leaf.",
+      "Do read colour through `--fg`, `--fg-soft`, `--accent`, `--line` and `--focus` so any component works on both paper and cloth.",
+      "Do use gold-ink #7A6633 for every piece of gold text on paper, gold #DCCA9B for text on cloth, and graphite #464445 for text on gold.",
+      "Do make the primary action graphite on paper and gold, gold on cloth, a 999px pill at 52px minimum height (44px small) with the liquid fill on hover and focus.",
+      "Do frame lead photographs in the almond with a drawn gold hairline overlay and no shadow; reserve 6px rectangles for the gallery wall and the lightbox.",
+      "Do set display type in Bodoni Moda at weight 400 with optical sizing and tight leading (.88 to 1.0) and negative tracking; set reading text in Jost 400 at `clamp(1rem, .96rem + .22vw, 1.12rem)` / 1.62.",
+      "Do use La Belle Aurore for a short annotation rotated -3° (or the hand-drawn ellipse), nothing longer.",
+      "Do give each section heading its own reveal and trigger it once; supporting copy rises 34px and fades over 1.3s.",
+      "Do keep shadows tall, soft and negatively spread (Resting Sheet Rule), graphite-tinted.",
+      "Do keep a 2px focus ring in `--focus` at 4px offset, hit areas at 44px or more, and pointer effects (tilt, magnetic, mouse parallax) behind fine-hover checks.",
+      "Do keep hidden start states in script, ship the plain layout without it, and give every moving element a reduced-motion path."
+    ],
+    "donts": [
+      "Don't set text in #DCCA9B on paper (1.5:1); that gold is for surfaces, hairlines and type on graphite.",
+      "Don't add a hue beyond the three brand colours and their listed derivatives; the nail photographs supply the colour.",
+      "Don't cut paper to cloth with a straight horizontal edge.",
+      "Don't fall back to the beauty-salon template: pastel hero, three icon cards, stock photo grid.",
+      "Don't frame lead photography in plain rectangles or circles outside the gallery wall.",
+      "Don't square a button or give it a radius other than the pill; cards are 14px, notes 4px, photos 6px.",
+      "Don't hardcode a paper or cloth colour inside a component that has to live on both.",
+      "Don't drive scroll choreography with width, height, top or left; transform, opacity, clip-path and stroke-dashoffset do that work.",
+      "Don't repeat a heading reveal style within the page, and don't hide content in CSS while waiting for script.",
+      "Don't show a hover-only affordance on touch; captions, controls and states must exist without hover."
+    ]
+  }
+}

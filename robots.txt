@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loopifyagency.github.io/site-sega-nails/sitemap.xml
