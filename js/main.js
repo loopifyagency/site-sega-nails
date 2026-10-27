@@ -162,6 +162,15 @@
       lastY = y;
     };
     let fabHidden = false;
+    const tabs = $$('[data-tabs] a');
+    if (tabs.length && 'IntersectionObserver' in window) {
+      const map = new Map();
+      tabs.forEach((a) => { const t = $(a.getAttribute('href')); if (t) map.set(t, a); });
+      const tio = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { const a = map.get(e.target); if (a) a.classList.toggle('is-active', e.isIntersecting); });
+      }, { rootMargin: '-48% 0px -48% 0px' });
+      map.forEach((a, t) => tio.observe(t));
+    }
     window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
     window.addEventListener('resize', update);
     update();

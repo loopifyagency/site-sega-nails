@@ -117,6 +117,15 @@ setTimeout(function(){document.documentElement.classList.remove('is-loading')},9
 <!-- Ruban marque-page : progression de lecture -->
 <div class="ribbon" aria-hidden="true"><i></i></div>
 
+<!-- Onglets d’index : aide visuelle redondante avec la navigation principale -->
+<nav class="tabs" aria-hidden="true" data-tabs>
+  <a href="#histoire" tabindex="-1"><span>Savoir-faire</span></a>
+  <a href="#prestations" tabindex="-1"><span>Prestations</span></a>
+  <a href="#galerie" tabindex="-1"><span>Galerie</span></a>
+  <a href="#avis" tabindex="-1"><span>Avis</span></a>
+  <a href="#contact" tabindex="-1"><span>Venir</span></a>
+</nav>
+
 <header class="nav" id="nav">
   <a class="nav__brand" href="#accueil" aria-label="SéGa Nails, retour en haut">
     <svg class="nav__mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-mark"/></svg>
@@ -251,7 +260,7 @@ setTimeout(function(){document.documentElement.classList.remove('is-loading')},9
         </li>
         <li class="step">
           <h3>Ensuite, place à la préparation.</h3>
-          <p>Minutie, gestes précis, ongles respectés. L’hygiène est prise très au sérieux&nbsp;: plusieurs clientes soulignent son hygiène.</p>
+          <p>Minutie, gestes précis, ongles respectés&nbsp;: plusieurs clientes soulignent la rigueur de son hygiène.</p>
           <span class="hand">propre &amp; précis</span>
         </li>
         <li class="step">
