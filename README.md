@@ -12,6 +12,16 @@ python3 -m http.server 8000
 
 N’importe quel hébergeur statique convient (GitHub Pages, Netlify, OVH…). Il suffit de publier le contenu du dépôt.
 
+## Déploiement (GitHub Pages)
+
+Le workflow `.github/workflows/pages.yml` publie le site à chaque push sur `main` (et à la demande, via *Actions → Run workflow*).
+Il ne publie que `index.html`, `css/`, `js/`, `vendor/`, `fonts/`, `img/`, `favicon.svg`, `robots.txt` et `sitemap.xml`.
+
+Activation (une seule fois) : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
+Adresse : https://loopifyagency.github.io/site-sega-nails/
+
+Avec un domaine personnalisé, mettre à jour `canonical`, `og:url`, `og:image`, les données structurées (`url`, `image`) de `index.html`, `robots.txt` et `sitemap.xml`.
+
 ## Structure
 
 ```
@@ -35,7 +45,7 @@ Fil rouge : cadres en forme d’ongle amande et courbe de french (« smile ») e
 
 ## Ce qu’il faut compléter
 
-- **Domaine** : une fois le site en ligne, ajouter l’URL absolue dans `og:image` / `og:url` (balises `<meta>` de `index.html`) et dans les données structurées (`url`, `image`).
+- **Domaine** : les URL absolues pointent vers l’adresse GitHub Pages ; à changer si un domaine personnalisé est branché (voir Déploiement).
 - **Logo officiel** : le site dessine sa propre fleur d’hibiscus (symbole `#i-mark` dans `index.html`). Remplacer par le fichier du logo quand il est disponible.
 - **Tarifs** : aucun prix n’a été fourni, chaque prestation affiche « Tarif sur demande ». À remplacer par les vrais prix dans les cartes de la section Prestations.
 - **Horaires** : à confirmer, en particulier samedi, dimanche et jours fériés (Toussaint). Ils se modifient à trois endroits : le tableau « Nous trouver », le graphique de la semaine, et la constante `HOURS` dans `js/main.js` (statut « Ouvert maintenant »), plus les données structurées.
