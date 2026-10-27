@@ -43,25 +43,30 @@
     const { day, t } = parisNow();
     const today = HOURS[day];
     if (today && t >= today[0] && t < today[1]) {
-      return { day, open: true, short: `Ouvert maintenant · jusqu’à ${fmtH(today[1])}`, long: `Aujourd’hui, ${DAY_NAMES[day]} : ${fmtH(today[0])} – ${fmtH(today[1])}. Un message sur Instagram fonctionne aussi.` };
+      return { day, open: true, short: `ouvert maintenant, jusqu’à ${fmtH(today[1])}`, long: `Aujourd’hui, ${DAY_NAMES[day]} : ${fmtH(today[0])} – ${fmtH(today[1])}. Un message sur Instagram fonctionne aussi.` };
     }
     if (today && t < today[0]) {
-      return { day, open: false, short: `Fermé · ouvre à ${fmtH(today[0])}`, long: `Aujourd’hui, ${DAY_NAMES[day]} : ouvert à partir de ${fmtH(today[0])}. Un message sur Instagram fonctionne aussi.` };
+      return { day, open: false, short: `fermé, ouvre à ${fmtH(today[0])}`, long: `Aujourd’hui, ${DAY_NAMES[day]} : ouvert à partir de ${fmtH(today[0])}. Un message sur Instagram fonctionne aussi.` };
     }
     for (let i = 1; i <= 7; i++) {
       const d = (day + i) % 7;
       if (HOURS[d]) {
         const when = i === 1 ? 'demain' : DAY_NAMES[d];
-        return { day, open: false, short: `Fermé · rouvre ${when} à ${fmtH(HOURS[d][0])}`, long: `Le salon rouvre ${when} à ${fmtH(HOURS[d][0])}. Un message sur Instagram fonctionne aussi.` };
+        return { day, open: false, short: `fermé, rouvre ${when} à ${fmtH(HOURS[d][0])}`, long: `Le salon rouvre ${when} à ${fmtH(HOURS[d][0])}. Un message sur Instagram fonctionne aussi.` };
       }
     }
-    return { day, open: false, short: 'Du lundi au vendredi', long: 'Du lundi au vendredi.' };
+    return { day, open: false, short: 'du lundi au vendredi', long: 'Du lundi au vendredi.' };
   }
   function initStatus() {
     const s = openStatus();
     const el = $('[data-status]');
     if (el) {
-      el.textContent = s.short;
+      let date = '';
+      try {
+        date = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', weekday: 'long', day: 'numeric', month: 'long' }).format(new Date());
+        date = date.charAt(0).toUpperCase() + date.slice(1);
+      } catch (e) { /* date facultative */ }
+      el.textContent = date ? `${date} — ${s.short}` : s.short;
       el.parentElement.classList.add(s.open ? 'is-open' : 'is-closed');
     }
     const long = $('[data-status-long]');
@@ -78,7 +83,7 @@
   /* ------------------------------------------------------------------
      Utilitaires de découpe du texte (mots / lettres)
      ------------------------------------------------------------------ */
-  function splitWords(el) {
+  function splitWords(el, chars) {
     if (!el || el.dataset.splitDone) return [];
     el.dataset.splitDone = '1';
     el.setAttribute('aria-label', el.textContent.replace(/\s+/g, ' ').trim());
@@ -92,7 +97,11 @@
             const w = doc.createElement('span');
             w.className = 'w'; w.setAttribute('aria-hidden', 'true');
             const wi = doc.createElement('span');
-            wi.className = 'wi'; wi.textContent = tok;
+            wi.className = 'wi';
+            if (chars) {
+              Array.from(tok).forEach((ch) => { const c = doc.createElement('span'); c.className = 'c'; c.textContent = ch; wi.appendChild(c); });
+              wi.style.display = 'inline-block';
+            } else wi.textContent = tok;
             w.appendChild(wi); frag.appendChild(w);
           });
           n.replaceWith(frag);
@@ -143,7 +152,7 @@
       ticking = false;
       const y = window.scrollY;
       const max = Math.max(1, doc.documentElement.scrollHeight - window.innerHeight);
-      if (ribbon) ribbon.style.transform = `translateY(${(Math.min(1, y / max) - 1) * 100}%)`;
+      if (ribbon) { const p = Math.min(1, y / max); ribbon.style.transform = `translateY(calc(${(p - 1) * 100}% + ${Math.round(88 * (1 - p))}px))`; }
       if (nav && !nav.classList.contains('is-menu')) {
         nav.classList.toggle('is-solid', y > 40);
         if (y > 160 && y > lastY + 4) nav.classList.add('is-hidden');
@@ -158,11 +167,13 @@
     update();
 
     if (fab && 'IntersectionObserver' in window) {
+      const seen = new Set();
       const io = new IntersectionObserver((entries) => {
-        fabHidden = entries.some((e) => e.isIntersecting) ? true : false;
+        entries.forEach((e) => { if (e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
+        fabHidden = seen.size > 0;
         update();
       }, { rootMargin: '0px 0px -20% 0px' });
-      ['#rendez-vous', '#contact'].forEach((s) => { const n = $(s); if (n) io.observe(n); });
+      ['#rendez-vous', '#contact', '.foot'].forEach((s) => { const n = $(s); if (n) io.observe(n); });
     }
   }
 
@@ -189,7 +200,7 @@
     btn.addEventListener('click', () => setOpen(btn.getAttribute('aria-expanded') !== 'true'));
     doc.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menu.classList.contains('is-open')) { setOpen(false); btn.focus(); } });
     menu.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
-    window.matchMedia('(min-width: 900px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
+    window.matchMedia('(min-width: 1101px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
   }
 
   function initFaq() {
@@ -337,8 +348,10 @@
     if (!svg || !row || !info) return null;
     const ir = info.getBoundingClientRect(), rr = row.getBoundingClientRect();
     const tw = $('.hours').getBoundingClientRect().width;
-    svg.style.left = '-22px';
-    svg.style.width = `${tw + 56}px`;
+    const pad = parseFloat(getComputedStyle($('.find')).paddingLeft) || 20;
+    const m = Math.max(14, Math.min(tw * 0.075, pad - 4));
+    svg.style.left = `${-m}px`;
+    svg.style.width = `${tw + m * 2}px`;
     svg.style.top = `${rr.top - ir.top - 9}px`;
     svg.style.height = `${rr.height + 18}px`;
     const p = $('path', svg); p.setAttribute('pathLength', '1');
@@ -447,7 +460,12 @@
 
     /* Découpes de texte */
     const headings = $$('[data-split="words"]');
-    headings.forEach((h) => splitWords(h));
+    const CHAR_VARIANTS = ['chars-up', 'flip', 'type', 'drop'];
+    headings.forEach((h) => {
+      const v = h.dataset.revealH;
+      splitWords(h, CHAR_VARIANTS.includes(v));
+      if (v === 'flip' || v === 'type') $$('.w', h).forEach((w) => w.classList.add('w--open'));
+    });
     const chars = {
       phone: splitChars($('.book__digits')),
       foot: splitChars($('.foot__word [data-chars]'))
@@ -467,12 +485,21 @@
     const mm = gsap.matchMedia();
 
     /* ====== Éléments communs ====== */
-    /* Titres : mots qui montent derrière un masque */
+    /* Titres : une mise en scène différente par section (état caché posé d’avance, révélé à l’entrée) */
+    const HEAD = {
+      'chars-up': (h) => ({ t: $$('.c', h), from: { yPercent: 118 }, to: { yPercent: 0, duration: 1.3, stagger: 0.028, ease: 'expo.out' } }),
+      side: (h) => ({ t: $$('.wi', h), from: { xPercent: -125 }, to: { xPercent: 0, duration: 1.5, stagger: 0.1, ease: 'expo.out' } }),
+      wipe: (h) => ({ t: h, from: { clipPath: 'inset(0 100% 0 0)' }, to: { clipPath: 'inset(0 -2% 0 0)', duration: 1.6, ease: 'expo.inOut', onComplete: () => gsap.set(h, { clearProps: 'clipPath' }) } }),
+      flip: (h) => ({ t: $$('.c', h), from: { rotationX: -95, yPercent: 40, opacity: 0, transformOrigin: '50% 100%', transformPerspective: 700 }, to: { rotationX: 0, yPercent: 0, opacity: 1, duration: 1.4, stagger: 0.05, ease: 'expo.out' } }),
+      blur: (h) => ({ t: $$('.wi', h), from: { opacity: 0, y: 26, filter: 'blur(12px)' }, to: { opacity: 1, y: 0, filter: 'blur(0px)', duration: 1.5, stagger: 0.12, ease: 'power3.out', onComplete: () => gsap.set($$('.wi', h), { clearProps: 'filter' }) } }),
+      type: (h) => ({ t: $$('.c', h), from: { opacity: 0 }, to: { opacity: 1, duration: 0.01, stagger: 0.045, ease: 'none' } }),
+      pop: (h) => ({ t: $$('.wi', h), from: { yPercent: 118, scale: 0.7, transformOrigin: '50% 100%' }, to: { yPercent: 0, scale: 1, duration: 1.3, stagger: 0.11, ease: 'back.out(1.5)' } }),
+      drop: (h) => ({ t: $$('.c', h), from: { yPercent: -118 }, to: { yPercent: 0, duration: 1.3, stagger: 0.04, ease: 'expo.out' } })
+    };
     headings.forEach((h) => {
-      gsap.from($$('.wi', h), {
-        yPercent: 118, duration: 1.4, stagger: 0.07, ease: 'expo.out',
-        scrollTrigger: { trigger: h, start: 'top 88%', once: true }
-      });
+      const spec = (HEAD[h.dataset.revealH] || HEAD.side)(h);
+      gsap.set(spec.t, spec.from);
+      ST.create({ trigger: h, start: 'top 88%', once: true, onEnter: () => gsap.to(spec.t, spec.to) });
     });
     const fadeUp = (sel, delay = 0) => $$(sel).forEach((el) => gsap.from(el, {
       y: 34, opacity: 0, duration: 1.3, delay, ease: 'expo.out',
@@ -714,7 +741,7 @@
       if (window.ScrollTrigger) ScrollTrigger.getAll().forEach((t) => t.kill(true));
       if (window.gsap) {
         gsap.globalTimeline.clear();
-        gsap.set('[data-hero-title] .wi, .w .wi, .ch, [data-hero-fade], .hero .arch, .hero .arch>img, .petal, .hero__scroll, .nav, .bar, .chart__ticks span, .day__n, .day__h, .qa, .shot, .shot img, .card, .hours tr, .find__map, .find__map iframe, .foot__mark, .fl-p, .fl-v path, .fl-s', { clearProps: 'all' });
+        gsap.set('[data-hero-title] .wi, .w .wi, .c, .ch, [data-split], [data-hero-fade], .hero .arch, .hero .arch>img, .petal, .hero__scroll, .nav, .bar, .chart__ticks span, .day__n, .day__h, .qa, .shot, .shot img, .card, .hours tr, .find__map, .find__map iframe, .foot__mark, .fl-p, .fl-v path, .fl-s', { clearProps: 'all' });
       }
     } catch (e) { /* rien */ }
     const c = $('#cover'); if (c) c.remove();
