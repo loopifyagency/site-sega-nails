@@ -22,6 +22,8 @@ vendor/           GSAP 3.15, ScrollTrigger, Lenis 1.3 (embarqués, aucun CDN)
 fonts/            Bodoni Moda, Jost, La Belle Aurore (auto-hébergées, latin)
 img/              les 5 photos de réalisations + image de partage (og.jpg)
 favicon.svg       fleur d’hibiscus
+DESIGN.md         système de design tel que construit (tokens, composants, règles)
+PRODUCT.md        faits produit confirmés (public, ton, preuves, ce qui ne doit pas être inventé)
 ```
 
 ## Direction artistique : « le carnet de rendez-vous »
